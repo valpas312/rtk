@@ -1,9 +1,9 @@
-import { Counter } from "./components/Counter"
+import Router from "./router"
 
 function App() {
 
   return <>
-    <Counter/>
+    <Router />
   </>
 }
 
