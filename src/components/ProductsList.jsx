@@ -1,9 +1,13 @@
-import React from 'react'
+const ProductsList = ({...props}) => {
 
-const ProductsList = () => {
-  return (
-    <div>ProductsList</div>
-  )
+  const { id, name, price } = props
+
+  return <>
+    <div key={id}>
+          <p>{name}</p>
+          <p>{price}</p>
+    </div>
+  </>
 }
 
 export default ProductsList
